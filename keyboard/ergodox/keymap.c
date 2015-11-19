@@ -87,6 +87,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "keymap_cub.h"
 #elif defined(KEYMAP_GUNI)
 #include "keymap_guni.h"
+#elif defined(KEYMAP_TEST)
+#include "keymap_test.h"
 #else
 
 static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
