@@ -92,23 +92,23 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KEYMAP(  // layer 0 : default
         // left hand
-        EQL, 1,   2,   3,   4,   5,   ESC,
-        BSLS,Q,   W,   E,   R,   T,   FN2,
+        1,   2,   3,   4,   5,   6,   GRV,
+        ESC, Q,   W,   E,   R,   T,   FN2,
         TAB, A,   S,   D,   F,   G,
         LSFT,Z,   X,   C,   V,   B,   FN1,
-        LGUI,GRV, BSLS,LEFT,RGHT,
-                                      LCTL,LALT,
+        LCTL,GRV, BSLS,LEFT,RGHT,
+                                      LALT,FN1,
                                            HOME,
-                                 BSPC,DEL, END,
+                                 SPC,LGUI, END,
         // right hand
-             FN3, 6,   7,   8,   9,   0,   MINS,
-             LBRC,Y,   U,   I,   O,   P,   RBRC,
+             RBRC,7,   8,   9,   0,   MINS, EQL,
+             TRNS,Y,   U,   I,   O,   P,   LBRC,
                   H,   J,   K,   L,   SCLN,QUOT,
-             FN1, N,   M,   COMM,DOT, SLSH,RSFT,
-                       LEFT,DOWN,UP,  RGHT,RGUI,
-        RALT,RCTL,
-        PGUP,
-        PGDN,ENT, SPC
+              ENT,N,   M,   COMM,DOT, SLSH,RSFT,
+                       LEFT,DOWN,UP,  RGHT,RCTL,
+        PGUP,RALT,
+        PGDN,
+        FN3 ,RGUI, BSPC
     ),
 
     KEYMAP(  // layer 1 : function and symbol keys
