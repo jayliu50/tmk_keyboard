@@ -110,12 +110,12 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                        LEFT,DOWN,UP,  RGHT,RCTL,
         PGUP,RALT,
         PGDN,
-        ESC ,RGUI, BSPC
+        ESC ,FN6 , BSPC
     ),
 
     KEYMAP(  // layer 1 : function and symbol keys
         // left hand
-        TRNS,F1,  F2,  F3,  F4,  F5,  F6,
+        TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
         TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
         TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
         TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
@@ -124,10 +124,10 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                            TRNS,
                                  TRNS,TRNS,TRNS,
         // right hand
-             F7,  F8,  F9,  F10, F11, F12, TRNS,
-             TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
-                  TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
-             FN4,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
+             TRNS,TRNS,F10, F11, F12, TRNS,
+             TRNS,TRNS,F7,  F8,  F9,  TRNS,TRNS,
+                  TRNS,F4,  F5,  F6,  TRNS,TRNS,
+             FN4 ,TRNS,F1,  F2,  F3,  TRNS,TRNS,
                        TRNS,TRNS,TRNS,TRNS,TRNS,
         TRNS,TRNS,
         TRNS,
@@ -214,6 +214,7 @@ static const uint16_t PROGMEM fn_actions[] = {
     ACTION_LAYER_TOGGLE(3),                         // FN3 - toggle Layer3 aka Numpad layer
     ACTION_LAYER_TOGGLE(4),                         // FN4 - toggle Layer4 aka Plover layer
     ACTION_LAYER_SET(0, ON_PRESS),                  // FN5 - set Layer0
+    ACTION_LAYER_MOMENTARY(3),                      // FN6 - switch to Layer 3 aka Numpad layer
 };
 
 void action_function(keyrecord_t *event, uint8_t id, uint8_t opt)
